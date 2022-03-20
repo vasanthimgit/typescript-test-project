@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ExpressJS TypeScript Example</title>
+</head>
+
+<body>
+    <%- include('partials/header') %>
+    <h1>Home Page</h1>
+    <h2>Users information</h2>
+    <ul>
+        <% users.forEach(function(user){ %>
+            <li>
+                <strong><%= user.name %></strong></br>
+                username: <%= user.username %>,
+                email: <%= user.email %>
+              </li>
+        <% }); %>
+      </ul>
+    <%- include('partials/footer') %>
+</body>
+
+</html>
